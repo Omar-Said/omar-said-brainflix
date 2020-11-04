@@ -1,0 +1,43 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.searchbar-field {
+  height: 3rem;
+  border: 1px solid $text-label;
+  border-radius: 3px;
+  width: 100%;
+  padding-left: 3rem;
+  margin-bottom: 0.5rem;
+  background-image: url("../../assets/Icons/PNG/Icon-search.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 1rem;
+  background-size: 1.2rem;
+
+  &::placeholder {
+    color: $primary;
+    font-family: $font-regular;
+    @include H4M-2;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2.5px solid $primary-cta-text;
+  }
+}
+
+.cta__container {
+  display: flex;
+}
+
+.avatar__wrapper {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-flex;
+  margin-left: 1rem;
+  align-items: baseline;
+}
