@@ -11,6 +11,15 @@
   @include H4M;
   width: calc(100% - 64px);
 
+  @include tablet {
+    width: 16vw;
+  }
+
+  @include desktop {
+    width: 9.5vw;
+    max-width: 121.594px;
+  }
+
   &:before {
     content: url(../../assets/Icons/SVG/Icon-upload.svg);
     margin-right: 0.5rem;

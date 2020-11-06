@@ -7,7 +7,7 @@ function SearchBar () {
     return(
         <form className="searchbar">
             <input className="searchbar-field" type="search" placeholder="Search" />
-                <div classname="cta__container">
+                <div className="cta__container">
                         <Button />
                     <div className="avatar__wrapper">
                         <Avatar />
