@@ -1,0 +1,29 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.detail__wrapper-left {
+  display: flex;
+}
+
+.views-img {
+  height: 20px;
+}
+
+.likes-img {
+  height: 20px;
+  margin-left: 0.5rem;
+  @include tablet {
+    margin-left: 1.5rem;
+  }
+}
+
+.views-count {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.likes-count {
+  margin: 0;
+  margin-left: 0.5rem;
+}

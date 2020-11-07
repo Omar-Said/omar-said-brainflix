@@ -1,4 +1,13 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
 .video__main {
   margin-left: 1rem;
   margin-right: 1rem;
+
+  @include tablet {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }

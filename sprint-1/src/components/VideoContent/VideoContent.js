@@ -1,12 +1,11 @@
-import VideoDetails from "../VideoDetails/VideoDetails"
+import VideoDetails from "../VideoDetails/VideoDetails";
 
-function VideoContent (props) {
-    console.log(props.data.data);
-    return (
-        <div>
-            <VideoDetails data={props}/>
-        </div>
-    )
+function VideoContent(props) {
+  return (
+    <div>
+      <VideoDetails mainData={props.mainData} />
+    </div>
+  );
 }
 
 export default VideoContent;

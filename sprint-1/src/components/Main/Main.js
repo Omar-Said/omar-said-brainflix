@@ -1,26 +1,26 @@
-
-import React from 'react';
-import "./Main.scss"
-import VideoPlayer from '../VideoPlayer/VideoPlayer'
-import VideoMain from '../VideoMain/VideoMain'
-import videoData from "../../data/videos"
-
-console.log(videoData);
+import React from "react";
+import "./Main.scss";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import VideoMain from "../VideoMain/VideoMain";
+import { mainVideo, sideVideo } from "../../data/videos";
 
 class Main extends React.Component {
-    state = {
-        mainVid: videoData
-    }
+  state = {
+    mainVid: mainVideo,
+    sideVid: sideVideo,
+  };
 
-
-        render() {
-        return (  
-            <div className="main">
-            <VideoPlayer />
-            <VideoMain data={this.state.mainVid} />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="main">
+        <VideoPlayer mainData={this.state.mainVid} />
+        <VideoMain
+          mainData={this.state.mainVid}
+          sideData={this.state.sideVid}
+        />
+      </div>
+    );
+  }
 }
- 
+
 export default Main;
