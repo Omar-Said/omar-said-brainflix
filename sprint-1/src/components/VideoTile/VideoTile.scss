@@ -1,0 +1,47 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.sidevideo-img {
+  height: 70px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+.sidevideo-wrapper {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.sidevideo-title {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  @include H5M;
+  font-family: $font-regular;
+  color: $text-label;
+}
+
+.ul {
+  padding: 0;
+  max-width: 303px;
+}
+
+.author {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  @include H4M-2;
+}
+
+.detail-cont {
+  margin-left: 1rem;
+}
+
+.vid-title {
+  @include H2M;
+  margin: 0;
+  font-family: $font-demi;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

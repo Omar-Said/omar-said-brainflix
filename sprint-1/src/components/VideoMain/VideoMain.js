@@ -6,7 +6,7 @@ function VideoMain(props) {
   return (
     <section className="video__main">
       <VideoContent mainData={props.mainData} />
-      <VideoTile sideData={props.sideVid} />
+      <VideoTile sideData={props.sideData} mainData={props.mainData} />
     </section>
   );
 }

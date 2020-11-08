@@ -3,7 +3,6 @@ import views from "../../assets/Icons/SVG/Icon-views.svg";
 import likes from "../../assets/Icons/SVG/Icon-likes.svg";
 
 function ChannelData(props) {
-  console.log(props);
   return (
     <div className="detail__wrapper-left">
       <img className="views-img" src={views} alt="views" />
