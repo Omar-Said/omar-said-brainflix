@@ -10,6 +10,7 @@
   font-family: $font-regular;
   @include H4M;
   width: calc(100% - 64px);
+  outline: none;
 
   @include tablet {
     width: 16vw;

@@ -3,32 +3,27 @@
 @use '../../partials/mixins' as *;
 
 .commented__container {
-  @include body-margin;
   display: flex;
-  margin-top: 1.5rem;
   flex-direction: column;
 
   @include tablet {
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
   }
 
   @include desktop {
-    width: 528px;
-    margin: 0 auto;
     margin-top: 1.5rem;
   }
 }
 
 .commented__wrapper-left {
   display: flex;
-  margin-top: 1rem;
   border-bottom: 1px solid $break-color;
+  padding-top: 1.5rem;
 
   &:first-child {
-    margin-top: 0;
     border-top: 1px solid $break-color;
-    padding-top: 1rem;
+  }
+  @include desktop {
+    padding-top: 1.3rem;
   }
 }
 
@@ -71,13 +66,13 @@
   @include H4M;
   font-family: $font-regular;
   color: $text-label;
-  margin-left: 1rem;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
 
   @include tablet {
     @include H4D;
-    margin-left: auto;
+    margin-left: 1rem;
   }
 }
 
@@ -91,6 +86,10 @@
 
   @include tablet {
     @include H4D;
+  }
+
+  @include desktop {
+    margin-bottom: 1.2rem;
   }
 }
 
@@ -113,4 +112,8 @@
 
 .map-wrapper {
   margin: 0;
+  padding: 0;
+  @include desktop {
+    max-width: 712px;
+  }
 }

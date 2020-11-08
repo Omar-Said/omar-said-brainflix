@@ -4,14 +4,14 @@
   background-color: black;
   height: 57.2vw;
   position: relative;
-  max-height: 183px;
   text-align: center;
 
   @include tablet {
-    max-height: 400px;
+    height: 52.1vw;
   }
 
   @include desktop {
+    height: 42.2vw;
     max-height: 540px;
   }
 
@@ -20,17 +20,16 @@
     width: 100%;
     object-fit: cover;
     display: inline-block;
-    max-height: 183px;
-    max-width: 425px;
     position: relative;
 
     @include tablet {
+      height: 52.1vw;
       width: 91.2vw;
-      max-height: 400px;
-      max-width: 900px;
     }
 
     @include desktop {
+      height: 42.2vw;
+      width: 73.8vw;
       max-height: 540px;
       max-width: 944px;
     }

@@ -3,9 +3,10 @@
 @use '../../partials/mixins' as *;
 
 .sidevideo-img {
-  height: 70px;
   width: 120px;
+  height: 70px;
   border-radius: 4px;
+  object-fit: cover;
 }
 
 .sidevideo-wrapper {
@@ -23,13 +24,18 @@
 
 .ul {
   padding: 0;
-  max-width: 303px;
+  max-width: 320px;
 }
 
 .author {
-  margin-top: 0.5rem;
+  padding-top: 0;
+  margin-top: 0;
   margin-bottom: 0;
-  @include H4M-2;
+  @include H5M;
+
+  @include tablet {
+    @include H3D;
+  }
 }
 
 .detail-cont {
@@ -44,4 +50,8 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+
+  @include tablet {
+    @include H3D;
+  }
 }

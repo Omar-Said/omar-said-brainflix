@@ -3,7 +3,7 @@
 @use '../../partials/mixins' as *;
 
 .searchbar {
-  max-width: 425px;
+  max-width: 460px;
   margin: 0 auto;
   @include tablet {
     margin: 0;
@@ -30,7 +30,7 @@
 
     @include tablet {
       margin-bottom: 0;
-      width: 25vw;
+      width: 27vw;
     }
 
     @include desktop {

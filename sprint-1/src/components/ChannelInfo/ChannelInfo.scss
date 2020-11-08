@@ -10,13 +10,13 @@
   }
 
   &-author {
-    @include H4M-2;
+    @include H2M;
     font-family: $font-demi;
     margin: 0;
   }
 
   &-timestamp {
-    @include H5M;
+    @include H2M;
     font-family: $font-regular;
     color: $text-label;
     font-weight: lighter;

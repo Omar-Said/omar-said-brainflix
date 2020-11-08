@@ -7,23 +7,29 @@
 }
 
 .views-img {
-  height: 20px;
 }
 
 .likes-img {
-  height: 20px;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   @include tablet {
     margin-left: 1.5rem;
   }
 }
 
 .views-count {
+  @include H4M;
+  font-family: $font-regular;
   margin: 0;
   margin-left: 0.5rem;
 }
 
 .likes-count {
+  @include H4M;
+  font-family: $font-regular;
   margin: 0;
   margin-left: 0.5rem;
+
+  @include desktop {
+    margin-right: 2rem;
+  }
 }

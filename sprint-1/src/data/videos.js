@@ -42,7 +42,7 @@ export const mainVideo = [
         name: "Theodore Duncan",
         comment:
           "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-        timestamp: "12/18/2018",
+        timestamp: "11/15/2018",
         id: "3",
       },
     ],

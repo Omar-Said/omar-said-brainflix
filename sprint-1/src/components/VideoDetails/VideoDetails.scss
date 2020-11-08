@@ -3,6 +3,9 @@
 @use '../../partials/mixins' as *;
 
 .detail__container {
+  @include desktop {
+    margin-right: 2rem;
+  }
   &-title {
     @include H1M;
     font-family: $font-bold;
@@ -21,12 +24,14 @@
 .video-desc {
   margin-top: 1.5rem;
   color: $primary;
-  @include H5M;
+  @include H4M;
+  font-family: $font-regular;
   margin-bottom: 2.5rem;
 
   @include tablet {
     margin-top: 2.5rem;
     margin-bottom: 4rem;
     max-width: 600px;
+    @include H4D;
   }
 }
