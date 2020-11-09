@@ -2,34 +2,31 @@
 @use '../../partials/typography' as *;
 @use '../../partials/mixins' as *;
 
-.detail__wrapper-left {
+.channel-data {
   display: flex;
-}
 
-.views-img {
-}
-
-.likes-img {
-  margin-left: 1rem;
-  @include tablet {
-    margin-left: 1.5rem;
+  &__views-count {
+    @include H4M;
+    font-family: $font-regular;
+    margin: 0;
+    margin-left: 0.5rem;
   }
-}
 
-.views-count {
-  @include H4M;
-  font-family: $font-regular;
-  margin: 0;
-  margin-left: 0.5rem;
-}
+  &__likes-img {
+    margin-left: 1rem;
+    @include tablet {
+      margin-left: 1.5rem;
+    }
+  }
 
-.likes-count {
-  @include H4M;
-  font-family: $font-regular;
-  margin: 0;
-  margin-left: 0.5rem;
+  &__likes-count {
+    @include H4M;
+    font-family: $font-regular;
+    margin: 0;
+    margin-left: 0.5rem;
 
-  @include desktop {
-    margin-right: 2rem;
+    @include desktop {
+      margin-right: 2rem;
+    }
   }
 }

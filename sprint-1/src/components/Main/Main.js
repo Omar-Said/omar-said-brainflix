@@ -1,5 +1,4 @@
 import React from "react";
-import "./Main.scss";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import VideoMain from "../VideoMain/VideoMain";
 import { mainVideo, sideVideo } from "../../data/videos";

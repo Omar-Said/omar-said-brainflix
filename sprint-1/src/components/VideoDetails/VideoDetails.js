@@ -7,9 +7,9 @@ function VideoDetails(props) {
   let [main] = props.mainData;
 
   return (
-    <div className="detail__container">
+    <div className="video-details">
       <DetailWrapper mainData={main} />
-      <p className="video-desc">{main.description}</p>
+      <p className="video-details__desc">{main.description}</p>
       <CommentSection />
       <CommentList mainData={main} />
     </div>

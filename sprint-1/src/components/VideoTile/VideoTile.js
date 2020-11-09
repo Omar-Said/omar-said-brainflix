@@ -13,9 +13,9 @@ function VideoTile(props) {
   });
 
   return (
-    <div className="sidevideo">
-      <h3 className="sidevideo-title">NEXT VIDEO</h3>
-      <ul className="ul">
+    <div>
+      <h3 className="sidevideo__header">NEXT VIDEO</h3>
+      <ul className="sidevideo-map__wrapper">
         {compareId.map((video) => (
           <SideVideo
             video={video.image}
@@ -30,33 +30,3 @@ function VideoTile(props) {
 }
 
 export default VideoTile;
-
-// import "./VideoTile.scss";
-// import SideVideo from "../sideVideo/sideVideo";
-
-// function VideoTile(props) {
-//   console.log(props.mainData[0].id);
-//   let compareId = props.sideData.filter((item) => {
-//     if (item.id !== props.mainData[0].id) {
-//       return item;
-//     }
-//   });
-
-//   return (
-//     <div className="sidevideo">
-//       <h3 className="sidevideo-title">NEXT VIDEO</h3>
-//       <ul className="ul">
-//         {compareId.map((video) => (
-//           <SideVideo
-//             video={video.image}
-//             title={video.title}
-//             channel={video.channel}
-//             key={video.id}
-//           />
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default VideoTile;

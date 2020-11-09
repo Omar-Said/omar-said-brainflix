@@ -20,7 +20,7 @@ export const mainVideo = [
     image: { videoList0 },
     views: "1,001,023",
     likes: "110,985",
-    duration: "0:42",
+    duration: "0:00 / 0:42",
     video: { vid },
     timestamp: "12/18/2018",
     comments: [

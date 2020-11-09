@@ -6,15 +6,12 @@
   display: flex;
   flex-direction: column;
 
-  @include tablet {
-  }
-
   @include desktop {
     margin-top: 1.5rem;
   }
 }
 
-.commented__wrapper-left {
+.commented__wrapper-top {
   display: flex;
   border-bottom: 1px solid $break-color;
   padding-top: 1.5rem;
@@ -41,7 +38,7 @@
   }
 }
 
-.commented__wrapper-top {
+.commented__wrapper-bot {
   display: flex;
   margin-top: 0;
   margin-bottom: 1rem;

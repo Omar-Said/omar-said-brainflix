@@ -9,13 +9,13 @@
     margin-bottom: 0;
   }
 
-  &-author {
+  &__author {
     @include H2M;
     font-family: $font-demi;
     margin: 0;
   }
 
-  &-timestamp {
+  &__timestamp {
     @include H2M;
     font-family: $font-regular;
     color: $text-label;

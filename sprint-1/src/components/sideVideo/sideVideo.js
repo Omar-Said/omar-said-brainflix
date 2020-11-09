@@ -1,10 +1,10 @@
 function SideVideo(props) {
   return (
-    <div className="sidevideo-wrapper">
-      <img className="sidevideo-img" src={props.video} alt="" />
-      <div className="detail-cont">
-        <p className="vid-title">{props.title}</p>
-        <p className="author">{props.channel}</p>
+    <div className="sidevideo">
+      <img className="sidevideo__img" src={props.video} alt="" />
+      <div className="sidevideo__container">
+        <p className="sidevideo__title">{props.title}</p>
+        <p className="sidevideo__channel">{props.channel}</p>
       </div>
     </div>
   );
