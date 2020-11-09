@@ -1,0 +1,57 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.sidevideo {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  &-map__wrapper {
+    padding: 0;
+    max-width: 320px;
+  }
+
+  &__img {
+    width: 120px;
+    height: 70px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  &__header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include H5M;
+    font-family: $font-regular;
+    color: $text-label;
+  }
+
+  &__container {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    @include H2M;
+    margin: 0;
+    font-family: $font-demi;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    @include tablet {
+      @include H3D;
+    }
+  }
+
+  &__channel {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include H5M;
+
+    @include tablet {
+      @include H3D;
+    }
+  }
+}

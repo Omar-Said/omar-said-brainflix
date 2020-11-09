@@ -1,0 +1,26 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.channel {
+  display: flex;
+  margin-bottom: 2rem;
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  &__author {
+    @include H2M;
+    font-family: $font-demi;
+    margin: 0;
+  }
+
+  &__timestamp {
+    @include H2M;
+    font-family: $font-regular;
+    color: $text-label;
+    font-weight: lighter;
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+}

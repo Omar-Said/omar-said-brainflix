@@ -1,0 +1,32 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.channel-data {
+  display: flex;
+
+  &__views-count {
+    @include H4M;
+    font-family: $font-regular;
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+
+  &__likes-img {
+    margin-left: 1rem;
+    @include tablet {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__likes-count {
+    @include H4M;
+    font-family: $font-regular;
+    margin: 0;
+    margin-left: 0.5rem;
+
+    @include desktop {
+      margin-right: 2rem;
+    }
+  }
+}
