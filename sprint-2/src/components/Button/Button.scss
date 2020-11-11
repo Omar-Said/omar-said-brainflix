@@ -30,4 +30,10 @@
   &:hover {
     background-color: $primary-cta-hover;
   }
+
+  &-link {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+  }
 }

@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./Button.scss";
 
 function Button() {
   return (
-    <button type="button" className="button">
-      UPLOAD
+    <button className="button">
+      <Link className="button-link" to="/VideoUpload">
+        UPLOAD
+      </Link>
     </button>
   );
 }

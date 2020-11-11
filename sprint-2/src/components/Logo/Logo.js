@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo/Logo-brainflix.svg";
 import "./Logo.scss";
 
-function Logo() {
+function Logo(props) {
+  console.log(props);
   return (
     <div className="logo-container">
-      <a className="logo-container__link" href="../../App">
+      <Link to="/">
         <img src={logo} alt="brainflix logo" />
-      </a>
+      </Link>
     </div>
   );
 }
