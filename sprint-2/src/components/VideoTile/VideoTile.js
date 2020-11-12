@@ -1,10 +1,8 @@
 import "./VideoTile.scss";
 import SideVideo from "../sideVideo/sideVideo";
 
-function VideoTile(props) {
-  let mainData = props.mainData[0];
-
-  let compareId = props.sideData.filter((item) => {
+function VideoTile({ mainData, sideData }) {
+  let compareId = sideData.filter((item) => {
     if (item.id !== mainData.id) {
       return item;
     } else {
@@ -22,6 +20,7 @@ function VideoTile(props) {
             title={video.title}
             channel={video.channel}
             key={video.id}
+            id={video.id}
           />
         ))}
       </ul>

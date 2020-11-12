@@ -4,14 +4,14 @@ import CommentSection from "../CommentSection/CommentSection";
 import CommentList from "../CommentList/CommentList";
 
 function VideoDetails(props) {
-  let [main] = props.mainData;
+  let { mainData } = props;
 
   return (
     <div className="video-details">
-      <DetailWrapper mainData={main} />
-      <p className="video-details__desc">{main.description}</p>
+      <DetailWrapper mainData={mainData} />
+      <p className="video-details__desc">{mainData.description}</p>
       <CommentSection />
-      <CommentList mainData={main} />
+      <CommentList mainData={mainData} />
     </div>
   );
 }

@@ -1,11 +1,9 @@
-import Header from "../components/Header/Header";
 import "./VideoUpload.scss";
 import template from "../assets/Images/Upload-video-preview.jpg";
 
 function VideoUpload() {
   return (
     <div>
-      <Header />
       <section className="upload-main">
         <div className="upload-main__title-wrapper">
           <h1 className="upload-main__title">Upload Video</h1>

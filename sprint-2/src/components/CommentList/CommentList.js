@@ -10,7 +10,7 @@ function CommentList(props) {
         {comments.map((comment) => (
           <Comment
             name={comment.name}
-            timestamp={comment.timestamp}
+            timestamp={new Date(comment.timestamp).toLocaleDateString()}
             comment={comment.comment}
             key={comment.id}
           />

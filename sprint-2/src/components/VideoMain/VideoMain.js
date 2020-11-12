@@ -2,11 +2,11 @@ import "./VideoMain.scss";
 import VideoContent from "../VideoContent/VideoContent";
 import VideoTile from "../VideoTile/VideoTile";
 
-function VideoMain(props) {
+function VideoMain({ mainData, sideData }) {
   return (
     <section className="video-main">
-      <VideoContent mainData={props.mainData} />
-      <VideoTile sideData={props.sideData} mainData={props.mainData} />
+      <VideoContent mainData={mainData} />
+      <VideoTile sideData={sideData} mainData={mainData} />
     </section>
   );
 }

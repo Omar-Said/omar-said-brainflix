@@ -1,9 +1,11 @@
 import VideoDetails from "../VideoDetails/VideoDetails";
 
 function VideoContent(props) {
+  let { mainData } = props;
+
   return (
     <div>
-      <VideoDetails mainData={props.mainData} />
+      <VideoDetails mainData={mainData} />
     </div>
   );
 }

@@ -3,7 +3,6 @@ import logo from "../../assets/Logo/Logo-brainflix.svg";
 import "./Logo.scss";
 
 function Logo(props) {
-  console.log(props);
   return (
     <div className="logo-container">
       <Link to="/">
