@@ -9,7 +9,7 @@
   height: 3rem;
   font-family: $font-regular;
   @include H4M;
-  width: calc(100% - 64px);
+  width: 100%;
   outline: none;
 
   @include tablet {
@@ -34,6 +34,7 @@
   &-link {
     text-decoration: none;
     color: #ffffff;
-    width: 100%;
+    height: 3rem;
+    width: calc(100% - 64px);
   }
 }

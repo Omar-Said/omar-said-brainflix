@@ -11,6 +11,17 @@
     max-width: 320px;
   }
 
+  &__link {
+    text-decoration: none;
+    display: flex;
+    @include H5M;
+    color: $primary;
+
+    @include tablet {
+      @include H3D;
+    }
+  }
+
   &__img {
     width: 120px;
     height: 70px;

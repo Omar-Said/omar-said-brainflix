@@ -34,9 +34,13 @@ class Main extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const query = this.props.match.params.id;
+    let query = this.props.match.params.id;
 
     if (prevProps.match.params.id !== query) {
+      query = this.props.match.params.id
+        ? this.props.match.params.id
+        : "1af0jruup5gu";
+
       axios
         .get(API_URL + "/videos/" + query + API_KEY)
         .then((response) => {

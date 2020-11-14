@@ -3,11 +3,9 @@ import "./Button.scss";
 
 function Button() {
   return (
-    <button className="button">
-      <Link className="button-link" to="/VideoUpload">
-        UPLOAD
-      </Link>
-    </button>
+    <Link className="button-link" to="/VideoUpload">
+      <button className="button">UPLOAD</button>
+    </Link>
   );
 }
 
