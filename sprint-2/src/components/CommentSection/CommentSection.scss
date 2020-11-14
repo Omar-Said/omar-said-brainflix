@@ -41,7 +41,7 @@
     flex-direction: column;
   }
 
-  &-label {
+  &__label {
     @include H5M;
     font-family: $font-regular;
     color: $text-label;
@@ -52,7 +52,7 @@
     }
   }
 
-  &-input {
+  &__input {
     padding-top: 0.5rem;
     border: 1px solid #e1e1e1;
     border-radius: 2px;
@@ -77,7 +77,7 @@
     }
   }
 
-  &-button {
+  &__button {
     width: 70vw;
     height: 50px;
     margin-top: 1rem;

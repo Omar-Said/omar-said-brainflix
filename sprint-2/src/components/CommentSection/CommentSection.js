@@ -11,16 +11,16 @@ function CommentSection() {
         </div>
         <form className="form">
           <div className="form__wrapper">
-            <label htmlFor="" className="form-label">
+            <label htmlFor="" className="form__label">
               JOIN THE CONVERSATION
             </label>
             <input
-              className="form-input"
+              className="form__input"
               type="text"
               placeholder="Add a comment"
             />
           </div>
-          <button className="form-button" input="submit">
+          <button className="form__button" input="submit">
             COMMENT
           </button>
         </form>
