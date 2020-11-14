@@ -1,5 +1,5 @@
 import VideoDetails from "../VideoDetails/VideoDetails";
-import VideoContents from "./VideoContent.scss";
+import "./VideoContent.scss";
 
 function VideoContent(props) {
   let { mainData } = props;
