@@ -8,10 +8,6 @@
     margin: auto;
   }
 
-  @include desktop {
-    margin-right: 2rem;
-  }
-
   &__desc {
     margin-top: 1.5rem;
     color: $primary;

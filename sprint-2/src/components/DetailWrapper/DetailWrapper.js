@@ -5,9 +5,9 @@ import ChannelData from "../ChannelData/ChannelData";
 function DetailWrapper(props) {
   let { mainData } = props;
   return (
-    <div className="detail__wrapper">
-      <h1 className="detail__wrapper-title">{mainData.title}</h1>
-      <div className="detail-sub__container">
+    <div className="details">
+      <h1 className="details__title">{mainData.title}</h1>
+      <div className="details__wrapper">
         <ChannelInfo mainData={mainData} />
         <ChannelData mainData={mainData} />
       </div>

@@ -1,0 +1,10 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.video-content {
+  @include desktop {
+    border-right: 2px solid $break-color;
+    margin-right: 2rem;
+  }
+}
