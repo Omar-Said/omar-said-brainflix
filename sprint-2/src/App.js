@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import VideoUpload from "./Pages/VideoUpload";
-import Main from "./components/Main/Main";
+import Main from "./Pages/Main";
 import Header from "./components/Header/Header";
 
 function App() {

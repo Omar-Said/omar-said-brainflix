@@ -1,8 +1,8 @@
 import React from "react";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-import VideoMain from "../VideoMain/VideoMain";
+import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
+import VideoMain from "../components/VideoMain/VideoMain";
 import axios from "axios";
-import { API_KEY, API_URL } from "../../data/videos";
+import { API_KEY, API_URL } from "../Utils/Utils";
 
 class Main extends React.Component {
   state = {
