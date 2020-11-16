@@ -13,12 +13,11 @@
   outline: none;
 
   @include tablet {
-    width: 16vw;
+    width: 13.5vw;
   }
 
   @include desktop {
-    width: 9.5vw;
-    max-width: 121.594px;
+    max-width: 103px;
   }
 
   &:before {

@@ -57,13 +57,14 @@
     }
   }
   &__label {
+    @include H5M;
+    font-family: $font-regular;
     color: $text-label;
-    font-size: 12px;
     font-weight: bold;
     margin-bottom: 0.2rem;
 
     @include tablet {
-      @include H4D-2;
+      @include H4M;
     }
 
     @include desktop {
@@ -130,6 +131,7 @@
     border-radius: 4px;
     margin-bottom: 2rem;
     padding-left: 1rem;
+    padding-bottom: 6rem;
     box-sizing: border-box;
 
     &:focus {
@@ -145,6 +147,7 @@
     @include desktop {
       height: 94px;
       width: 100%;
+      padding-bottom: 3rem;
     }
   }
 }
