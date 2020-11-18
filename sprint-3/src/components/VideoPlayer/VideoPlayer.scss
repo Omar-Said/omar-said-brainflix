@@ -1,0 +1,158 @@
+@use '../../partials/variables' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
+
+.video {
+  background-color: black;
+  height: 57.2vw;
+  text-align: center;
+  position: relative;
+
+  @include tablet {
+    height: 52.1vw;
+  }
+
+  @include desktop {
+    height: 42.2vw;
+    max-width: 2000px;
+    max-height: 880px;
+    margin: 0 auto;
+  }
+
+  &__player {
+    height: 57.2vw;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+
+    @include tablet {
+      height: 52.1vw;
+      width: 91.2vw;
+    }
+
+    @include desktop {
+      height: 42.2vw;
+      width: 73.8vw;
+      max-width: 2000px;
+      max-height: 880px;
+      margin: 0 auto;
+    }
+  }
+
+  &-controls {
+    top: -16px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    @include tablet {
+      left: 4%;
+      width: 92%;
+    }
+
+    @include desktop {
+      left: 13%;
+      width: 74%;
+    }
+  }
+}
+
+.slider {
+  width: 80%;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    width: 124%;
+  }
+
+  @include tablet {
+    margin-left: 1rem;
+  }
+
+  &__inner {
+    display: flex;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 3px;
+    border-radius: 4px;
+    background-color: black;
+    width: 100%;
+    @include tablet {
+      margin-right: 0;
+    }
+  }
+
+  &__inner-text {
+    width: 25%;
+    color: white;
+    display: none;
+    font-family: $font-regular;
+
+    @include tablet {
+      display: block;
+      margin: 0;
+      font-size: 10px;
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  width: 25%;
+  border-radius: 4px;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 80px;
+
+  @include tablet {
+    margin-left: 1rem;
+  }
+}
+
+#playPause {
+  background: url("../../assets/Icons/SVG/Icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  height: 37px;
+  width: 92px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 1rem;
+}
+
+#fullscreen {
+  background: url("../../assets/Icons/SVG/Icon-fullscreen.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  height: 27px;
+  width: 15vw;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+#volume {
+  background: url("../../assets/Icons/SVG/Icon-volume.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  height: 27px;
+  width: 15vw;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}

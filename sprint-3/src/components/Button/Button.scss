@@ -1,0 +1,39 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.button {
+  background-color: $primary-cta-text;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  height: 3rem;
+  font-family: $font-regular;
+  @include H4M;
+  width: 100%;
+  outline: none;
+
+  @include tablet {
+    width: 13.5vw;
+  }
+
+  @include desktop {
+    max-width: 103px;
+  }
+
+  &:before {
+    content: url(../../assets/Icons/SVG/Icon-upload.svg);
+    margin-right: 0.5rem;
+    height: 16px;
+  }
+
+  &:hover {
+    background-color: $primary-cta-hover;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #ffffff;
+    height: 3rem;
+    width: calc(100% - 64px);
+  }
+}
