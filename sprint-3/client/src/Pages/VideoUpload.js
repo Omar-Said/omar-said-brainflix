@@ -21,6 +21,8 @@ class VideoUpload extends React.Component {
     });
   };
 
+  // Better way to incorpate all of the inputs into one function
+
   handleClick = (event) => {
     event.preventDefault();
     console.log(this.state.title, this.state.description, this.state.image);

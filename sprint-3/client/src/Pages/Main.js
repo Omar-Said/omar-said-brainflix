@@ -15,6 +15,12 @@ class Main extends React.Component {
       ? this.props.match.params.id
       : "1af0jruup5gu";
 
+    // if I do the axios.get request prior to the ternary and then use the ternary afterwards I can make the hard coded id dynamic by using this.state.sidevid[0]
+    // Put axios calls into separate functions and call them within update and mount.
+    // Publish should route back to main page
+    // Cancel button should clear the form
+    // sidevideo and sidevideo__header are misplaced - switch the block
+
     axios
       .get(API_URL + "/videos/" + query + API_KEY)
       .then((response) => {
