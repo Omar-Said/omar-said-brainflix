@@ -2,7 +2,7 @@ import "./VideoTile.scss";
 import SideVideo from "../sideVideo/sideVideo";
 
 function VideoTile({ mainData, sideData }) {
-  let compareId = sideData.filter((item) => item.id !== mainData[0].id);
+  let compareId = sideData.filter((item) => item.id !== mainData.id);
 
   return (
     <div>

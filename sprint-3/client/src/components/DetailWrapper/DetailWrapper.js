@@ -6,7 +6,7 @@ function DetailWrapper(props) {
   let { mainData } = props;
   return (
     <div className="details">
-      <h1 className="details__title">{mainData[0].title}</h1>
+      <h1 className="details__title">{mainData.title}</h1>
       <div className="details__wrapper">
         <ChannelInfo mainData={mainData} />
         <ChannelData mainData={mainData} />

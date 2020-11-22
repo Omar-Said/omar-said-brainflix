@@ -1,10 +1,11 @@
 import "./CommentSection.scss";
 import mohan from "../../assets/Images/Mohan-muruge.jpg";
 
-function CommentSection() {
+function CommentSection(props) {
+  let { mainData } = props;
   return (
     <div className="comment">
-      <h4 className="comment-counter">3 Comments</h4>
+      <h4 className="comment-counter">{mainData.comments.length} COMMENTS</h4>
       <div className="comment__wrapper">
         <div className="avatar__wrapper-mod">
           <img className="avatar-img" src={mohan} alt="avatar" />;

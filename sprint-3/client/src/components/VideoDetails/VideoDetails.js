@@ -9,8 +9,8 @@ function VideoDetails(props) {
   return (
     <div className="video-details">
       <DetailWrapper mainData={mainData} />
-      <p className="video-details__desc">{mainData[0].description}</p>
-      <CommentSection />
+      <p className="video-details__desc">{mainData.description}</p>
+      <CommentSection mainData={mainData} />
       <CommentList mainData={mainData} />
     </div>
   );

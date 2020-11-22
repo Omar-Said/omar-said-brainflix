@@ -2,7 +2,6 @@ import "./VideoUpload.scss";
 import template from "../assets/Images/Upload-video-preview.jpg";
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 class VideoUpload extends React.Component {
   state = {
@@ -18,8 +17,9 @@ class VideoUpload extends React.Component {
         description: e.target.description.value,
       })
       .then((response) => {
-        console.log(response);
+        console.log("Hello T.A");
       });
+
     e.target.reset();
   };
 

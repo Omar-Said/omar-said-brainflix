@@ -65,7 +65,6 @@ class Main extends React.Component {
     if (!this.state.mainVid || !this.state.sideVid) {
       return <main>Loading...</main>;
     }
-
     return (
       <div className="main">
         <VideoPlayer mainData={this.state.mainVid} />

@@ -26,9 +26,9 @@ router.get("/videos", (_req, res) => {
 });
 
 router.get("/videos/:id", (req, res) => {
-  const videoId = mainVideo.find((element) => element.id === req.params.id);
-  if (videoId) {
-    res.json(mainVideo.filter((video) => video.id === req.params.id));
+  const video = mainVideo.find((element) => element.id === req.params.id);
+  if (video) {
+    res.json(video);
   } else {
     res.status(404);
   }

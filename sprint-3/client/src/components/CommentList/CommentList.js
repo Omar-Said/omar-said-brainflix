@@ -2,8 +2,7 @@ import "./CommentList.scss";
 import Comment from "../Comment/Comment";
 
 function CommentList(props) {
-  let { comments } = props.mainData[0];
-  // had to change it to index 0 on the array to work
+  let { comments } = props.mainData;
 
   return (
     <section className="commented__container">
