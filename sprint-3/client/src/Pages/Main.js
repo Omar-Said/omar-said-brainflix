@@ -2,7 +2,7 @@ import React from "react";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import VideoMain from "../components/VideoMain/VideoMain";
 import axios from "axios";
-import { API_KEY, API_URL } from "../Utils/Utils";
+import { API_URL } from "../Utils/Utils";
 
 class Main extends React.Component {
   state = {
@@ -22,7 +22,7 @@ class Main extends React.Component {
     // sidevideo and sidevideo__header are misplaced - switch the block
 
     axios
-      .get(API_URL + "/videos/" + query + API_KEY)
+      .get(API_URL + "/videos/" + query)
       .then((response) => {
         this.setState({ mainVid: response.data });
       })
@@ -30,7 +30,7 @@ class Main extends React.Component {
         console.log(error);
       });
     axios
-      .get(API_URL + "/videos/" + API_KEY)
+      .get(API_URL + "/videos/")
       .then((response) => {
         this.setState({ sideVid: response.data });
       })
@@ -48,7 +48,7 @@ class Main extends React.Component {
         : "1af0jruup5gu";
 
       axios
-        .get(API_URL + "/videos/" + query + API_KEY)
+        .get(API_URL + "/videos/" + query)
         .then((response) => {
           this.setState({ mainVid: response.data });
         })

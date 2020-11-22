@@ -5,14 +5,14 @@ const Video = (props) => {
 
   return (
     <div className="video">
-      <video poster={mainData.image} className="video__player">
+      <video poster={mainData[0].image} className="video__player">
         Your browser does not support video player
       </video>
       <div className="video-controls">
         <button id="playPause"></button>
         <div className="slider">
           <div className="slider__inner"></div>
-          <p className="slider__inner-text">0:00 / {mainData.duration}</p>
+          <p className="slider__inner-text">0:00 / {mainData[0].duration}</p>
         </div>
         <div className="sidebar">
           <button id="fullscreen"></button>
