@@ -17,13 +17,16 @@ class VideoUpload extends React.Component {
         description: e.target.description.value,
       })
       .then((response) => {
-        console.log("Hello T.A");
+        this.setState({
+          title: response.data,
+          description: response.data,
+        });
+      })
+      .then((window.location = "/"))
+      .catch((error) => {
+        console.log(error);
       });
 
-    e.target.reset();
-  };
-
-  onSubmit = (e) => {
     e.target.reset();
   };
 
@@ -68,9 +71,7 @@ class VideoUpload extends React.Component {
               </div>
               <div className="publish">
                 <button className="publish__button">PUBLISH</button>
-                <p className="publish__cancel" onSubmit={this.cancelForm}>
-                  CANCEL
-                </p>
+                <p className="publish__cancel">CANCEL</p>
               </div>
             </form>
           </div>
