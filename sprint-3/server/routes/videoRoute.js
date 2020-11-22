@@ -41,7 +41,7 @@ router.post("/videos", (req, res) => {
     id: uniqid(),
     title: req.body.title,
     description: req.body.description,
-    image: "https://i.imgur.com/l2Xfgpl.jpg",
+    image: "http://localhost:8080/Upload-video-preview.jpg",
     channel: "Omar Said",
     views: 0,
     likes: 0,

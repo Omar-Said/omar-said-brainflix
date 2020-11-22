@@ -4,7 +4,6 @@ import CommentSection from "../CommentSection/CommentSection";
 import CommentList from "../CommentList/CommentList";
 
 function VideoDetails(props) {
-  console.log(props);
   let { mainData } = props;
 
   return (

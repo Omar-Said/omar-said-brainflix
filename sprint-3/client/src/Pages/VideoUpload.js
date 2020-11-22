@@ -2,6 +2,7 @@ import "./VideoUpload.scss";
 import template from "../assets/Images/Upload-video-preview.jpg";
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class VideoUpload extends React.Component {
   state = {
@@ -11,18 +12,19 @@ class VideoUpload extends React.Component {
 
   addVideo = (e) => {
     e.preventDefault();
+    axios
+      .post("http://localhost:8080/videos", {
+        title: e.target.title.value,
+        description: e.target.description.value,
+      })
+      .then((response) => {
+        console.log(response);
+      });
+    e.target.reset();
+  };
 
-    const title = e.target.title.value;
-    const description = e.target.description.value;
-
-    const object = {
-      title: title,
-      description: description,
-    };
-
-    axios.post("http://localhost:8080/videos", object).then((response) => {
-      console.log(response);
-    });
+  onSubmit = (e) => {
+    e.target.reset();
   };
 
   render() {
@@ -66,7 +68,9 @@ class VideoUpload extends React.Component {
               </div>
               <div className="publish">
                 <button className="publish__button">PUBLISH</button>
-                <p className="publish__cancel">CANCEL</p>
+                <p className="publish__cancel" onSubmit={this.cancelForm}>
+                  CANCEL
+                </p>
               </div>
             </form>
           </div>
