@@ -9,12 +9,8 @@ function readMainVideos() {
   return JSON.parse(mainContent);
 }
 
-router.use((_req, _res, next) => {
-  next();
-});
-
 router.get("/videos", (_req, res) => {
-  const sideVideos = mainVideo.map((video) => {
+  const sideVideos = readMainVideos().map((video) => {
     return {
       id: video.id,
       title: video.title,
@@ -49,10 +45,10 @@ router.post("/videos", (req, res) => {
     timestamp: Date.now(),
     comments: [],
   };
-
+  console.log(req.body);
   const newVideo = readMainVideos();
   newVideo.push(newSideVid);
-  fs.writeFileSync("./data/mainVideos.json", JSON.stringify(newVideo));
+  fs.writeFileSync("./data/mainVideos.json", JSON.stringify(newVideo, null, 4));
   res.status(201).json(newVideo);
 });
 

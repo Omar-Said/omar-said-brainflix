@@ -8,7 +8,14 @@ class VideoUpload extends React.Component {
   state = {
     title: "",
     description: "",
+    submitted: false,
   };
+
+  componentDidUpdate() {
+    if (this.state.submitted) {
+      this.props.history.push("/");
+    }
+  }
 
   addVideo = (e) => {
     e.preventDefault();
@@ -19,11 +26,9 @@ class VideoUpload extends React.Component {
       })
       .then((response) => {
         this.setState({
-          title: response.data,
-          description: response.data,
+          submitted: true,
         });
       })
-      .then((window.location = "/"))
       .catch((error) => {
         console.log(error);
       });
