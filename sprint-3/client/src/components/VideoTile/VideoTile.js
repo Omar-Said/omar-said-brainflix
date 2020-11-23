@@ -5,7 +5,7 @@ function VideoTile({ mainData, sideData }) {
   let compareId = sideData.filter((item) => item.id !== mainData.id);
 
   return (
-    <div>
+    <div className="sidevideo">
       <h3 className="sidevideo__header">NEXT VIDEO</h3>
       <ul className="sidevideo-map__wrapper">
         {compareId.map((video) => (

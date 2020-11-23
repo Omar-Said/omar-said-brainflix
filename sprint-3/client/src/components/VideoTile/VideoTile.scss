@@ -3,12 +3,22 @@
 @use '../../partials/mixins' as *;
 
 .sidevideo {
-  display: flex;
-  margin-bottom: 1.5rem;
+  &__header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include H5M;
+    font-family: $font-regular;
+    color: $text-label;
+  }
 
   &-map__wrapper {
     padding: 0;
     max-width: 320px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 1.5rem;
   }
 
   &__link {
@@ -27,14 +37,6 @@
     height: 70px;
     border-radius: 4px;
     object-fit: cover;
-  }
-
-  &__header {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    @include H5M;
-    font-family: $font-regular;
-    color: $text-label;
   }
 
   &__container {
