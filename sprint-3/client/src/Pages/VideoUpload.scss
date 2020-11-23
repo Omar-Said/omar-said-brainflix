@@ -152,7 +152,11 @@
 }
 
 .publish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include tablet {
+    flex-direction: row;
     margin-top: 2.5rem;
     display: flex;
     justify-content: flex-end;
@@ -189,6 +193,7 @@
   &__cancel {
     margin-top: 1.5rem;
     font-family: $font-demi;
+    text-decoration: none;
     @include H5M;
     text-align: center;
     color: $primary-cta-text;
